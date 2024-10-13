@@ -1,0 +1,409 @@
+/* Estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    color: #004AAD;
+    background-color: #f9f9f9;
+}
+
+/* Cabeçalho fixo */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 10px 20px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Navegação */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+/* logo da navegação */
+.logo img {
+    width: 100px;
+}
+
+/* diposição navegação */
+.nav-menu {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* href da navegação */
+.nav-menu li a {
+    color: #004AAD;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    color: #2BC866;
+}
+
+/* botões da navegação */
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btnsign {
+    background-color: #2BC866;
+    color: #f9f9f9;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btnsign:hover {
+    background-color: #1A9047;
+}
+
+.btnlogin{
+    background-color: #f9f9f9;
+    color: #2BC866;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border: 2px solid #2BC866;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btnlogin:hover {
+    background-color: #1A9047;
+    color: #f9f9f9;
+    border: 2px solid #1A9047;
+
+}
+
+/* parte de rastreio */
+
+.rastreiosection {
+    padding: 70px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+/* titulo do rastreio */
+.rastreiosection h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #575858;
+}
+
+/* disposição parte de rastreio */
+.rastreioform {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+/* tratamento do input */
+.rastreioform input {
+    padding: 15px;
+    width: 300px;
+    border: 2px solid ;
+    border-radius: 5px;
+}
+/* botões da parte de rastreio */
+.rastreiobtn {
+    padding: 15px 20px;
+    background-color: #575858;
+    color: #f9f9f9;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.rastreiobtn:hover {
+    background-color: #1A9047;
+}
+
+/* disposição parte de navegação embaixo */
+.pagedown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    gap: 50px;
+    padding: 20px;
+}
+
+section {
+    text-align: center;
+}
+
+/* tratamento dos itens da parte de navegação embaixo */
+.pagedown h2 {
+    font-size: 2rem;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+
+.pagedown h2:hover{
+    color: #1A9047;
+}
+
+
+.pagedown h2 a {
+    text-decoration: none;
+    color: #000;
+}
+
+.pagedown h2 a:hover {
+   color: #2BC866;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1A9047;
+    color: #f9f9f9;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+/* disposição da logistica*/
+.logistica-section-sobre-nos {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    text-align: center;
+}
+
+/* tratamento do titulo da logistica*/
+.logistica-section-sobre-nos .titulologistica {
+    font-size: 2.8rem;
+    color: #2BC866;
+    margin-bottom: 20px;
+}
+
+/* tratamento do texto da logistica*/
+.logistica-section-sobre-nos .intro-text {
+    font-size: 1.2rem;
+    color: #000;
+    margin-bottom: 50px;
+}
+
+/* tratamento das caixas da logistica*/
+.logistica-section-sobre-nos .logistica-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+/* tratamento de cada caixa da logistica*/
+.logistica-section-sobre-nos .logistica-item {
+    background-color:#f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 28%;
+    text-align: center;
+}
+
+/* tratamento do titulo de cada caixa da logistica*/
+.logistica-section-sobre-nos .logistica-title {
+    font-size: 1.6rem;
+    color: #2BC866;
+    margin-bottom: 15px;
+}
+
+/* tratamento do texto de cada caixa da logistica*/
+.logistica-section-sobre-nos .logistica-text {
+    font-size: 1.1rem;
+    color: #000;
+    line-height: 1.6;
+}
+
+/* tratamento do texto embaixo das caixas*/
+.lema{
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 20px;
+
+}
+.rastreiotxt{
+    color: #2BC866;
+
+}
+
+/* tratamento do botão de cadastro na parte de baixo*/
+.logistica-section-sobre-nos .cadastro-button {
+    margin-top: 40px;
+}
+
+.logistica-section-sobre-nos .btncadastro {
+    background-color: #2BC866;
+    padding: 15px 40px;
+    border-radius: 8px;
+    color: #f9f9f9;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.logistica-section-sobre-nos .btncadastro:hover {
+    background-color: #1A9047;
+}
+
+/* tratamento da main usado apenas em uma page*/
+main {
+    background-color: #34C759;
+    color: white;
+    padding: 70px 0;
+}
+
+/* disposição dos itens parceiros  */
+.container-parceiros {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* tratamento de todos os textos */
+.parceiros-text {
+    max-width: 600px;
+}
+
+/* tratamento do titulo */
+.parceiros-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* tratamento dos textos */
+.parceiros-text p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* tratamento da ilustração */
+.pagparceirosimg img {
+    width: 250px;
+}
+
+/* disposição dos logos parceiros */
+.parceiros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+/*Logos não encontrados*/
+  
+}
+
+/* tratamento de cada logo */
+.parceiros img {
+    margin: 0 15px;
+    height: 50px;
+}
+
+/* disposição da parte de ajuda*/
+.ajudasection {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f5f5f5;
+}
+
+.ajudadiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* tratamento dos textos*/
+.ajudatext {
+    max-width: 600px;
+    margin-right: 50px;
+}
+
+/* tratamento dos h2*/
+.ajudatext h2 {
+    font-size: 32px;
+    color: #34C759;
+    margin-bottom: 20px;
+}
+
+/* tratamento das descrições de cada ajuda */
+.ajudatext p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* tratamento da imagem*/
+.ajudaimg img {
+    width: 300px;
+}
+
+/* disposição das caixas de ajuda*/
+.ajudacards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+/* tratamento de cada caixas de ajuda*/
+.card {
+    background-color: white;
+    border: 2px solid #34C759;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* tratamento de cada titulo das caixas de ajuda*/
+.card h3 {
+    font-size: 18px;
+    color: #34C759;
+    margin-bottom: 10px;
+}
+
+/* tratamento de cada texto das caixas de ajuda*/
+.card p, .card ul {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.card ul {
+    padding-left: 20px;
+}
+
+/*estilizando o item que marca a lista*/
+.card ul li {
+    list-style-type: disc;
+}
